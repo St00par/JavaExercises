@@ -6,5 +6,4 @@ public class runner {
 		calcScanner cs = new calcScanner();
 		cs.runScannerCalc();
 	}
-
 }
