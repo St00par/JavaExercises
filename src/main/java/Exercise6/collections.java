@@ -5,7 +5,6 @@ import java.util.List;
 
 public class collections {
 	
-
 public void arrayHundred() {	
 List<Integer> listOfNums = new ArrayList<Integer>();
 for (int i = 1; i <= 101; i++) {
