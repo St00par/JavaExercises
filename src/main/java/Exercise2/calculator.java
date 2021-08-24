@@ -2,23 +2,24 @@ package Exercise2;
 
 public class calculator {
 
-	public double addition(double num1, double num2) {
-		return num1 + num2;
+	public void addition(double num1, double num2) {
+		System.out.println("The answer is " +(num1+num2));
 	}
 
-	public double divide(double num1, double num2) throws ArithmeticException {
+	public void multiply(double num1, double num2) {
+		System.out.println("The answer is " +(num1*num2));
+	}
+
+	public void subtract(double num1, double num2) {
+		System.out.println("The answer is " +(num1-num2));
+	}
+	
+	public void divide(double num1, double num2) {
 		if (num2 == 0) {
-			throw new ArithmeticException("Can't Divide by zero!");
+			System.out.println("Cannot divide by zero! Please try again.");
+        } else {
+            System.out.println("The answer is " +(num1/num2));
 		}
-		return num1 / num2;
-	}
-
-	public double multiply(double num1, double num2) {
-		return num1 * num2;
-	}
-
-	public double subtract(double num1, double num2) {
-		return num1 - num2;
 	}
 
 }	
